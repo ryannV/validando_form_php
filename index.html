@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .rounded-input {
+            border-radius: 10px;
+        }
+        .custom-btn {
+            background-color: #007bff;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+        .custom-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form action="atualiza_form.php" method="post">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control rounded-input" id="nome" name="nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control rounded-input" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control rounded-input" id="senha" name="senha">
+                            </div>
+                            <div class="form-group">
+                                <label for="idade">Idade</label>
+                                <input type="text" class="form-control rounded-input" id="idade" name="idade">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel">Telefone</label>
+                                <input type="text" class="form-control rounded-input" id="tel" name="tel">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="end">Endereço</label>
+                                <input type="text" class="form-control rounded-input" id="end" name="end">
+                            </div>
+                            <div class="form-group">
+                                <label for="genero">Gênero</label>
+                                <select class="form-control rounded-input" id="genero" name="genero">
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                    <option>Não informar</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="interesse">Interesse</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="esporte" name="option[]" value="Esporte">
+                                    <label class="form-check-label" for="esporte">Esporte</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="musica" name="option[]" value="Música">
+                                    <label class="form-check-label" for="musica">Música</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="tecnologia" name="option[]" value="Tecnologia">
+                                    <label class="form-check-label" for="tecnologia">Tecnologia</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="opcao">Escolha uma opção</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="op01" name="opcao" value="op01">
+                                    <label class="form-check-label" for="op01">Opção 01</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="op02" name="opcao" value="op02">
+                                    <label class="form-check-label" for="op02">Opção 02</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn custom-btn">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
